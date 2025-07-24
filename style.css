@@ -30,6 +30,17 @@ body {
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00FF08;
 }
 
 /* ESTILO DO CABEÇALHO */
@@ -69,18 +80,17 @@ header nav ul li {
 .btn-contato button:hover {
     box-shadow: 0px 0px 8px #00FF08;
     transform: scale(1.05);
-    transition: .2s;
 }
 
 /* ESTILO DO TOPO DO SITE */
 
 section.topo-do-site {
-    padding: 40px 4%;
+    padding: 40px 4%!important;
 }
 
 section.topo-do-site .flex {
     align-items: center;
-    justify-content: center;
+    /* Retirei o Justify-content:center; OBS: colocar dps */
     gap: 90px;
 }
 
@@ -112,5 +122,38 @@ section.topo-do-site .flex {
     100% {
         top: 30px;
     }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.445);
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+ .especialidades .especialidades-box i { /* Chamando os ícones*/
+    font-size: 70px;
+    color: #00FF08;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
 }
 
