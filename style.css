@@ -156,6 +156,10 @@ section.especialidades .flex {
     margin: 15px 0;
 }
 
+.especialidades .especialidades-box p {
+    text-align: justify;
+}
+
 /* ESTILO SOBRE */
 
 section.sobre {
@@ -198,4 +202,56 @@ section.sobre .txt-sobre p {
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
+}
+
+/* ESTILO DO PORTFÓLIO */
+
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.11);
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: #00FF08;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    transition: 5s;
+    position: relative;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.733);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
 }
