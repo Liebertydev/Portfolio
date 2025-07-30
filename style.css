@@ -219,6 +219,7 @@ section.sobre .txt-sobre p {
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
+    color: black;
 }
 
 /* ESTILO DO PORTFÓLIO */
